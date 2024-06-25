@@ -1,10 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import { Inter } from 'next/font/google';
+const inter = Inter({ subsets: ["latin"] });
 
 const Header = () => {
+
     return (
-        <header className="bg-white shadow-md p-4 flex justify-between items-center">
+        <header className={"bg-white shadow-md p-4 flex justify-between items-center" + inter.className}>
             <div className="flex items-center bg-[#E7E7E7] text-[#DC4A2D] px-7 py-[12px]">
                 <span className="text-xl font-semibold">Logo</span>
             </div>
